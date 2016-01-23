@@ -1,0 +1,128 @@
+body{
+	font-family: Arial ,"sans-serif";
+}
+img{
+	max-width: 100%;
+}
+header.row, footer.row, section.row{
+	margin: 0;
+}
+header.row, footer{
+	padding: 10px 0;
+	height: 60px;
+}
+header h1{
+	font-size: 21px;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+header a{
+	color: #2d3950;
+}
+header span{
+	display: inline-block;
+	margin-left: 10px;
+}
+.jumbotron, .arrow{
+	color: #fff;
+}
+.jumbotron{
+	height: 500px;
+	position: relative;
+	margin-bottom: 0;
+}
+.jumbotron h1{
+	display: inline-block;
+	font-weight: bold;
+	font-size: 100px;
+	text-transform: uppercase;
+	padding: 20px 60px;
+	border-bottom: 1px solid #15a4fa;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+}
+a.btn-primary, a.btn-primary:hover{
+	background: transparent;
+	border: 1px solid #15a4fa;
+	border-radius: 0;
+	font-weight: bold;
+    margin: 25px 0 20px;
+    padding: 10px 30px;
+}
+.arrow{
+	display: block;
+	margin-top: 90px;
+}
+.arrow:hover{
+	color: #fff;
+}
+#about{
+	background: #f6f9f9;
+	height: 250px;
+	padding: 40px;
+}
+#about h2{
+	margin: 10px 0;
+}
+#about p{
+	margin: 20px 0;
+	font-size: 17px;
+}
+#about p, #portfolio p{
+	color: #999;
+}
+#work{
+	padding: 40px;
+}
+#work h4{
+	font-weight: bold;
+}
+#portfolio{
+	background: #f6f9f9;
+	padding: 40px;
+}
+#portfolio div{
+}
+#portfolio .img-wrapper{
+	width: 96%;
+	margin: 5px auto;
+}
+#portfolio .img-wrapper img{
+	height: 200px;
+}
+#contact{
+	padding: 40px;
+	color: #fff;
+}
+#contact input[type="text"], #contact input[type="email"], #contact textarea{
+	display: block;
+	background: transparent;
+	border: 1px solid #fff;
+	margin: 20px auto;
+    width: 60%;
+}
+#contact input[type="text"], #contact input[type="email"]{
+	height: 40px;
+}
+#contact h3{
+	font-size: 32px;
+    font-weight: bold;
+}
+#contact a.btn{
+	margin: 0;
+}
+#contact div.col-sm-10 div.col-xs-6{
+	position :relative;
+}
+#contact div.col-sm-10 div.col-xs-6:first-child{
+	left: 47px;
+}
+#contact div.col-sm-10 div.col-xs-6:last-child{
+	right: 26px;
+}
+#contact .col-xs-6 span>span{
+	margin-left: 5px;
+}
+
+
