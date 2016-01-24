@@ -4,37 +4,38 @@ body{
 img{
 	max-width: 100%;
 }
-header.row, footer.row, section.row{
+header.row, footer.row, section.row, header h1{
 	margin: 0;
 }
 header.row, footer{
 	padding: 10px 0;
-	height: 60px;
+	min-height: 60px;
+}
+header h1, .jumbotron h1, a.btn-primary, a.btn-primary:hover, #work h4, #contact h3{
+	font-weight: bold;
 }
 header h1{
 	font-size: 21px;
-	margin: 0;
 	padding: 0;
-	font-weight: bold;
 }
 header a{
 	color: #2d3950;
 }
-header span{
+header span, .jumbotron h1{
 	display: inline-block;
+}
+header span{
 	margin-left: 10px;
 }
-.jumbotron, .arrow{
+.jumbotron, .arrow, .arrow:hover, #contact{
 	color: #fff;
 }
 .jumbotron{
-	height: 500px;
+	min-height: 500px;
 	position: relative;
 	margin-bottom: 0;
 }
 .jumbotron h1{
-	display: inline-block;
-	font-weight: bold;
 	font-size: 100px;
 	text-transform: uppercase;
 	padding: 20px 60px;
@@ -46,7 +47,6 @@ a.btn-primary, a.btn-primary:hover{
 	background: transparent;
 	border: 1px solid #15a4fa;
 	border-radius: 0;
-	font-weight: bold;
     margin: 25px 0 20px;
     padding: 10px 30px;
 }
@@ -54,13 +54,14 @@ a.btn-primary, a.btn-primary:hover{
 	display: block;
 	margin-top: 90px;
 }
-.arrow:hover{
-	color: #fff;
+#portfolio, #about{
+	background: #f6f9f9;
+}
+#portfolio, #about, #work, #contact{
+	padding: 40px;
 }
 #about{
-	background: #f6f9f9;
-	height: 250px;
-	padding: 40px;
+	min-height: 250px;
 }
 #about h2{
 	margin: 10px 0;
@@ -72,28 +73,12 @@ a.btn-primary, a.btn-primary:hover{
 #about p, #portfolio p{
 	color: #999;
 }
-#work{
-	padding: 40px;
-}
-#work h4{
-	font-weight: bold;
-}
-#portfolio{
-	background: #f6f9f9;
-	padding: 40px;
-}
-#portfolio div{
-}
 #portfolio .img-wrapper{
 	width: 96%;
 	margin: 5px auto;
 }
 #portfolio .img-wrapper img{
 	height: 200px;
-}
-#contact{
-	padding: 40px;
-	color: #fff;
 }
 #contact input[type="text"], #contact input[type="email"], #contact textarea{
 	display: block;
@@ -107,22 +92,43 @@ a.btn-primary, a.btn-primary:hover{
 }
 #contact h3{
 	font-size: 32px;
-    font-weight: bold;
 }
 #contact a.btn{
 	margin: 0;
 }
-#contact div.col-sm-10 div.col-xs-6{
+#contact div.col-sm-10 div.col-sm-6{
 	position :relative;
 }
-#contact div.col-sm-10 div.col-xs-6:first-child{
+#contact div.col-sm-10 div.col-sm-6:first-child{
 	left: 47px;
 }
-#contact div.col-sm-10 div.col-xs-6:last-child{
+#contact div.col-sm-10 div.col-sm-6:last-child{
 	right: 26px;
 }
-#contact .col-xs-6 span>span{
+#contact .col-sm-6 span>span{
 	margin-left: 5px;
 }
-
+@media only screen and (min-width:320px) and (max-width : 767px) {
+ 	.jumbotron h1{
+ 		font-size: 50px;
+ 	}
+ 	#contact input[type="text"], #contact input[type="email"], #contact textarea{
+ 		width: 100%;
+ 	}
+ 	#contact div.col-sm-10 div.col-sm-6:first-child{
+ 		left: 0;
+ 	}
+ 	#contact div.col-sm-10 div.col-sm-6:last-child{
+ 		right: 0;
+ 	}
+ 	#contact a.btn{
+		margin-top: 10px;
+	}
+ 	footer{
+ 	text-align: center;
+ 	}
+ 	footer .col-sm-6{
+ 		margin-bottom: 5px;
+ 	}
+ }
 
